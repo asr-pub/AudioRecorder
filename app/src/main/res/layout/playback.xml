@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_time_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:gravity="end"
+                android:text="00:00:00 / 00:00:00"
+                android:textSize="12sp" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/bsb_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bsb_hide_bubble="true"
+                app:bsb_is_float_type="false"
+                app:bsb_second_track_color="@color/colorPrimaryDark"
+                app:bsb_second_track_size="4dp"
+                app:bsb_thumb_radius="8dp"
+                app:bsb_thumb_radius_on_dragging="10dp"
+                app:bsb_track_color="@color/colorPrimary"
+                app:bsb_track_size="1dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放" />
+
+            <Button
+                android:id="@+id/btn_play_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启循环播放" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
